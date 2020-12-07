@@ -54,7 +54,9 @@ ROOT_URLCONF = 'PruebasDJango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            "C:/Users/sergi/OneDrive/Documentos/Web_Django_Python/Pruebas_Django/app/templates"
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
