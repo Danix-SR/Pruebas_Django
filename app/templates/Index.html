@@ -1,6 +1,18 @@
+<!-- Hereda de layout -->
+{% extends "layout/layout.html" %}
 
-{% for Lista in Lista_User %}
-    <label>{{Lista.Id}} {{Lista.Nombre}} {{Lista.Apellido}}</label> <br>
-{% endfor %}
+<!-- Cambar de Titulo a la etiqueta de layout -->   
+{% block title %} Index {% endblock %}
 
-{% include "indexp.html"%}
+{% block content %}
+
+    {% for Lista in Lista_User %}
+        <label>{{Lista.Id}} {{Lista.Nombre}} {{Lista.Apellido}}</label> <br>
+    {% endfor %}
+
+    {% include "indexp.html"%}
+
+{% endblock %}
+
+
+
