@@ -20,4 +20,5 @@ from app.Usuarios import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.Index, name='home'), #path('Index/', view.Index, name="Index"),
+    path("CrearUsuario/",views.CrearUsuario, name="Crear")
 ]

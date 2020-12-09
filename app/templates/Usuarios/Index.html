@@ -7,7 +7,13 @@
 {% block content %}
 
     {% for Lista in Lista_User %}
-        <label>{{Lista.Id}} {{Lista.Nombre}} {{Lista.Apellido}}</label> <br>
+        <form action="CrearUsuario/" method="GET" >
+            <input type="text" value="{{Lista.Id}}" name="Id" placeholder="Id">
+            <input type="text" value="{{Lista.Nombre}}" name="Nombre" placeholder="Nombre">
+            <input type="text" value="{{Lista.Apellido}}" name="Apellido" placeholder="Apellido">
+            <input type="submit">
+            <br>
+        </form>
     {% endfor %}
 
     {% include "Usuarios/indexp.html"%}
