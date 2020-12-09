@@ -13,4 +13,4 @@ for cnt in range(0, 5):
     Lista_User.append(Usuario(str(cnt),"Nombre"+str(cnt),"Apellido"+str(cnt)))
 
 def Index (request):
-    return render(request,"Index.html",{"Lista_User":Lista_User})
+    return render(request,"Usuarios/Index.html",{"Lista_User":Lista_User})
