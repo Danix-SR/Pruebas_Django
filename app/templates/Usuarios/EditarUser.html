@@ -1,0 +1,20 @@
+<!-- Hereda de layout -->
+{% extends "layout/layout.html" %}
+
+<!-- Cambar de Titulo a la etiqueta de layout -->   
+{% block title %} Editar {% endblock %}
+
+{% block content %}
+
+    {% for Lista in Lista_User %}
+        <label>{{Lista.Nombre}}</label>
+        <label>{{Lista.Apellido}}</label>
+        <label>{{Lista.Correo}}</label>
+        <label>{{Lista.Contraseña}}</label>
+        <label>{{Lista.Rol}}</label>
+        <label>{{Lista.Estado}}</label>
+        <label> type({{Lista}})</label>
+        <br>
+    {% endfor %}
+
+{% endblock %}
